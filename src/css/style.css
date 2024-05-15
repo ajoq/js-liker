@@ -1,0 +1,155 @@
+.container {
+    box-sizing: border-box;
+    display: block;
+    padding: 24px;
+}
+
+.liker {
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+}
+
+.liker-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.liker-img {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pic/heart.png);
+    position: absolute;
+    top:  calc(50% - 15px);
+    left: calc(50% - 15px);
+    pointer-events: none;
+}
+
+.liker-img-animation1 {
+    animation: heart1 500ms ease-out;
+}
+
+.liker-img-animation2 {
+    animation: heart2 500ms ease-out;
+}
+
+.liker-img-animation3 {
+    animation: heart3 500ms ease-out;
+}
+
+.liker-img-animation4 {
+    animation: heart4 500ms ease-out;
+}
+
+@keyframes heart1 {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: matrix(1, 0, 0, 1, -50, -50);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: matrix(1, 0, 0, 1, 0, -100);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: matrix(1, 0, 0, 1, 50, -150);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, -200);
+        opacity: 0.1;
+    }
+}
+
+@keyframes heart2 {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: matrix(1, 0, 0, 1, 0, -50);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: matrix(1, 0, 0, 1, 50, -100);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: matrix(1, 0, 0, 1, -50, -150);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, -200);
+        opacity: 0.1;
+    }
+}
+
+@keyframes heart3 {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: matrix(1, 0, 0, 1, 0, -50);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: matrix(1, 0, 0, 1, -50, -100);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: matrix(1, 0, 0, 1, 50, -150);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, -200);
+        opacity: 0.1;
+    }
+}
+
+@keyframes heart4 {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: matrix(1, 0, 0, 1, 50, -50);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: matrix(1, 0, 0, 1, 0, -100);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: matrix(1, 0, 0, 1, -50, -150);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, -200);
+        opacity: 0.1;
+    }
+}
